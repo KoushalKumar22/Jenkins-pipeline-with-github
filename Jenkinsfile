@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from GitHub
-                git branch: 'main', url: 'https://github.com/username/springboot-project.git'
+                git credentialsId: 'github-token', url: 'https://github.com/KoushalKumar22/Jenkins-pipeline-with-github.git'
             }
         }
         stage('Build') {
