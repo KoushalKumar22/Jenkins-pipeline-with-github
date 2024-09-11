@@ -10,4 +10,8 @@ public class UserController {
     public String test(){
         return "This Is A Test Run";
     }
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello Jenkins";
+    }
 }
